@@ -18,10 +18,13 @@ app.use(cookieParser());
 app.use(bodyParser.json({ limit: '100mb' }));
 app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
 
-app.use(cors({
-  origin: ['http://localhost:4000', 'http://localhost:5173','https://1-production-3924.up.railway.app/'], 
-  credentials: true
-}));
+app.use((req, res, next) => {
+       res.header('Access-Control-Allow-Origin', 'https://1btcnews.com'); // Replace with your Netlify domain
+       res.header('Access-Control-Allow-Credentials', 'true');
+       res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Allow the necessary HTTP methods
+       res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization'); // Allow necessary headers
+       next();
+     });
 
 app.use('/api/blog', blogRouter);
 app.use('/api/user', userRouter);
