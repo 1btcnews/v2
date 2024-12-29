@@ -31,7 +31,7 @@ const BlogCard = ({ blog }) => {
                     <h1 className='lg:text-5xl text-3xl font-bold mb-2 text-slate-800'>{title}</h1>
                     <hr className='my-5 py-1 bg-[#1a1e3a]' />
                     <div className='lg:flex flex-row mb-4'>
-                        <p className='text-[#5d22ff] text-lg mr-12'>Written By <span className='text-[#31a9ff] text-xl hover:text-[#ff4848]'>{author?.username}</span> - On: {formatDate(createdAt)}</p>
+                        <p className='text-[#5d22ff] text-lg mr-12'>Written By <span className='text-[#31a9ff] text-xl hover:text-[#ff4848]'>Abir Mhamun</span> - On: {formatDate(createdAt)}</p>
                         <p className='text-[#5d22ff] text-lg mr-12'>views : {view}</p>
                         <p className='text-[#5d22ff] text-lg mr-12'>Category: {category}</p>
                     </div>
