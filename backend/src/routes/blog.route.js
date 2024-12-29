@@ -51,7 +51,7 @@ router.get('/', async (req, res) => {
             };
         }
 
-        const posts = await Blog.find(query).populate("author", "email").sort({ createdAt: -1 });
+        const posts = await Blog.find(query).populate("author","username" "email").sort({ createdAt: -1 });
         res.status(200).send(posts);
     } catch (error) {
         console.error("Error in fetching blogs:", error);
