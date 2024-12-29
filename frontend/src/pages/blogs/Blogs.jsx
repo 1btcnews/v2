@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SearchBlog from './SearchBlog';
+import { Link } from 'react-router-dom';
 import { useFatchBlogsQuery } from '../../redux/features/blogs/blogsApi';
 
 // Function to generate SEO-friendly URL
@@ -37,15 +38,15 @@ const Blogs = () => {
           // Generate SEO-friendly URL for the blog title
           const seoFriendlyUrl = generateSeoFriendlyUrl(blog.title);
           return (
-            <a
-              href={`/blog/${seoFriendlyUrl}`}  // Use the SEO-friendly URL
+            <Link
+              to={`/blog/${seoFriendlyUrl}`}  // Use the SEO-friendly URL
               key={blog._id}
               className='shadow-md'
             >
               <img src={blog?.coverImg} alt="" className='w-full h-80' />
               <h2 className='text-xl p-4'>{blog.title}</h2>
               <p className='p-2 px-4 text-lg text-blue-300'>views: {blog.view} </p>
-            </a>
+            </Link>
           );
         })}
       </div>

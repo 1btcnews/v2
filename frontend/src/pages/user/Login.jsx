@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLoginUserMutation } from '../../redux/features/auth/authApi';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../redux/features/auth/authSlice';
 
@@ -62,7 +63,7 @@ const Login = () => {
                 </button>
             </form>
             <p className='my-5 text-center text-gray-500'>
-                Don't have an account? <a href='/register' className='text-blue-500 hover:text-blue-700'>Sign Up</a>
+                Don't have an account? <Link to='/register' className='text-blue-500 hover:text-blue-700'>Sign Up</Link>
             </p>
         </div>
     );

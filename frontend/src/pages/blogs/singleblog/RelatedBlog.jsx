@@ -14,8 +14,8 @@ const RelatedBlog = () => {
             blog.length > 0 ? (<div className='space-y-4 mt-5'>
                   {
                     blog.map((blog) => (
-                        <a 
-                        href={`/blog/${blog.title}`}
+                        <Link
+                        to={`/blog/${blog.title}`}
                         key={blog._id}
                         className='flex flex-col sm:flex-row gap-4 shadow-sm '>
                            <div className='size-14 ' >
@@ -24,7 +24,7 @@ const RelatedBlog = () => {
                            <div className='mb-2'>
                             <h4 className='font-medium text-lg text-[#216ead]'>{blog.title.substring(0, 50)}</h4>
                            </div>
-                        </a>
+                        </Link>
                     ))
                   }
              </div>) :(<div className='p-8'>No related blogs found</div>)

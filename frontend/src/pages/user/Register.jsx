@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import { useRegisterUserMutation } from '../../redux/features/auth/authApi';
 
 const Register = () => {
@@ -55,7 +56,7 @@ const Register = () => {
                 </button>
             </form>
             <p className='my-5 text-center text-gray-500'>
-                Already have an account? <a href='/login' className='text-blue-500 hover:text-blue-700'>Sign In</a>
+                Already have an account? <Link to='/login' className='text-blue-500 hover:text-blue-700'>Sign In</Link>
             </p>
         </div>
     );
