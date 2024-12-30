@@ -16,6 +16,7 @@
     "@editorjs/list": "^2.0.2",
     "@editorjs/simple-image": "^1.6.0",
     "@reduxjs/toolkit": "^2.5.0",
+     "@vercel/analytics": "^1.4.1",
     "backend": "file:..",
     "chart.js": "^4.4.7",
     "editorjs-html": "^3.4.3",
