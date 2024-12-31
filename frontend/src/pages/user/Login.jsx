@@ -26,7 +26,7 @@ const Login = () => {
             dispatch(setUser({ user }));
             // Store token in local storage
             localStorage.setItem('token', token);
-            alert("Login Successful");
+            setMessage("Login successful");
             navigate('/');
         } catch (error) {
             setMessage("Invalid email or password");
@@ -53,17 +53,17 @@ const Login = () => {
                     className='w-full bg-slate-200 rounded-lg focus:outline-none px-5 py-3'
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                {message && <p className='text-red-500'>{message}</p>}
+                {message && <p className='text-[#ff4221]'>{message}</p>}
                 <button
                     disabled={loginLoading}
                     type="submit"
-                    className='w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded-lg'
+                    className='w-full bg-[#ff4221] hover:bg-[#ff6247] text-white font-bold py-2 rounded-lg'
                 >
                     {loginLoading ? 'Logging in...' : 'Login'}
                 </button>
             </form>
             <p className='my-5 text-center text-gray-500'>
-                Don't have an account? <Link to='/register' className='text-blue-500 hover:text-blue-700'>Sign Up</Link>
+                Don't have an account? <Link to='/register' className='text-[#ff4221] hover:text-[#f97861]'>Sign Up</Link>
             </p>
         </div>
     );

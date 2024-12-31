@@ -31,11 +31,11 @@ const BlogCard = ({ blog }) => {
                     <h1 className='lg:text-5xl text-3xl font-bold mb-2 text-slate-800'>{title}</h1>
                     <hr className='my-5 py-1 bg-[#1a1e3a]' />
                     <div className='lg:flex flex-row mb-4'>
-                        <p className='text-[#5d22ff] text-lg mr-12'>Written By <span className='text-[#31a9ff] text-xl hover:text-[#ff4848]'>Abir Mhamun</span> - On: {formatDate(createdAt)}</p>
-                        <p className='text-[#5d22ff] text-lg mr-12'>views : {view}</p>
-                        <p className='text-[#5d22ff] text-lg mr-12'>Category: {category}</p>
+                        <p className='text-[#ff4221] text-lg mr-12'>Written By <span className='text-[#000000] text-xl hover:text-[#ff4848]'>Abir Mhamun</span> - On: {formatDate(createdAt)}</p>
+                        <p className='text-[#ff4221] text-lg mr-12'>views : {view}</p>
+                        <p className='text-[#ff4221] text-lg mr-12'>Category: {category}</p>
                     </div>
-                    <img src={coverImg} alt='cover' className='h-90 rounded mr-4 mb-8' />
+                    <img src={coverImg} alt='cover' className='h-96 w-full  rounded mr-4 mb-8' />
                     <hr className='my-5 py-1 bg-[#0a0b15]' />
                     <div className='mt-9 space-y-4'>
                         <div dangerouslySetInnerHTML={{ __html: htmlContent }} className='space-y-3 editorjsdiv' />

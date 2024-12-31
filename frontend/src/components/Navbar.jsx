@@ -10,6 +10,7 @@ const navlists = [
   { name: 'Bitcoin', link: "https://1btcnews.com/blog/Bitcoin-Exploration" },
   { name: 'Ethereum', link: "https://1btcnews.com/" },
   { name: 'Alcoin', link: "https://1btcnews.com/" },
+  { name: 'Contact Us', link: "/contact-us" },
   
 ];
 
@@ -26,10 +27,13 @@ const Navbar = () => {
   };
 
   return (
-    <header className='py-6 bg-gray-800'>
-      <nav className='container mx-auto flex justify-between px-5'>
+    <header className='py-3 bg-[#1a1a1a]'>
+     <div 
+      
+     class="binance-widget-marquee wid" data-cmc-ids="1,1027,52,5426,74,1958,11419,24478,5690,13502" data-theme="dark"  data-locale="en"    data-fiat="USD" data-powered-by="Powered by " data-disclaimer=" " ></div>
+      <nav className='container mt-24 mx-auto flex justify-between px-4'>
         <a href="/">
-          <img src="/logo.png" alt="logo" className='h-12' />
+          <img src="/logo.png" alt="logo" className='h-20' />
         </a>
         <ul className='sm:flex hidden items-center gap-8'>
           {navlists.map((list, index) => (
@@ -41,7 +45,7 @@ const Navbar = () => {
             <>
               {user.role === 'admin' && (
                 <li className="navliste">
-                  <NavLink to="/dashboard" className='text-white'><button className="text-white bg-[#296fdf] rounded-md px-4 py-2 hover:bg-[#3e85d6]">Dashboard</button></NavLink>
+                  <NavLink to="/dashboard" className='text-white'><button className="text-white bg-[#ff4221] rounded-md px-4 py-2 hover:bg-[#ff4221]">Dashboard</button></NavLink>
                 </li>
               )}
               {user.role === 'user' && (
@@ -52,13 +56,13 @@ const Navbar = () => {
                 </li>
               )}
               <li className="navliste">
-                <NavLink onClick={handleLogout} className='text-white'><button className="text-white bg-[#296fdf] rounded-md px-4 py-2 hover:bg-[#3e85d6]">Logout</button></NavLink>
+                <NavLink onClick={handleLogout} className='text-white'><button className="text-white bg-[#ff4221] rounded-md px-4 py-2 hover:bg-[#ff4221]">Logout</button></NavLink>
                 
               </li>
             </>
           ) : (
             <li className="navliste">
-              <NavLink to="/login" className='text-white'><button className="text-white bg-[#296fdf] rounded-md px-4 py-2 hover:bg-[#3e85d6]">Login</button></NavLink>
+              <NavLink to="/login" className='text-white'><button className="text-white bg-[#ff4221] rounded-md px-4 py-2 hover:bg-[#ff4221]">Login</button></NavLink>
             </li>
           )}
         </ul>
@@ -75,7 +79,8 @@ const Navbar = () => {
       </nav>
 
       {isMenuOpen && (
-        <ul className='fixed top-[180px] left-0 w-full h-auto pb-8 border-b-gray-900 bg-gray-800 shadow-sm z-50'>
+        <ul className='fixed top-[150px] left-0 w-full h-auto pb-8 border-b-gray-900 bg-gray-800 shadow-sm z-50'>
+          <li className="text-[#ff4221] text-3xl font-bold m-6 mx-8">Menu</li>
           {navlists.map((list, index) => (
             <li key={index} className='mx-4 mt-5 px-4 navliste'>
               <a
@@ -92,7 +97,7 @@ const Navbar = () => {
             <>
               {user.role === 'admin' && (
                 <li className="mx-5 mt-7 px-5 navliste">
-                  <NavLink to="/dashboard" onClick={() => setIsMenuOpen(false)} > <button className="text-white bg-[#296fdf] rounded-md px-4 py-2 hover:bg-[#3e85d6]">Dashboard</button></NavLink>
+                  <NavLink to="/dashboard" onClick={() => setIsMenuOpen(false)} > <button className="text-white bg-[#ff4221] rounded-md px-4 py-2 hover:bg-[#ff5821] ">Dashboard</button></NavLink>
                 </li>
               )}
               {user.role === 'user' && (
@@ -103,12 +108,12 @@ const Navbar = () => {
                 </li>
               )}
               <li className="mx-5 mt-7 px-5 navliste">
-                <NavLink onClick={() => { handleLogout(); setIsMenuOpen(false); }} className='text-white'><button className="text-white bg-[#296fdf] rounded-md px-4 py-2 hover:bg-[#3e85d6]">Logout</button></NavLink>
+                <NavLink onClick={() => { handleLogout(); setIsMenuOpen(false); }} className='text-white'><button className="text-white bg-[#ff4221] rounded-md px-4 py-2 hover:bg-[#ff6e3e]">Logout</button></NavLink>
               </li>
             </>
           ) : (
             <li className="mx-5 mt-7 px-5 navliste">
-              <NavLink to="/login" onClick={() => setIsMenuOpen(false)} className='text-white'><button className="text-white bg-[#296fdf] rounded-md px-4 py-2 hover:bg-[#3e85d6]">Login</button></NavLink>
+              <NavLink to="/login" onClick={() => setIsMenuOpen(false)} className='text-white'><button className="text-white bg-[#ff4221] rounded-md px-4 py-2 hover:bg-[#ff8351]">Login</button></NavLink>
             </li>
           )}
         </ul>

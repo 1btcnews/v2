@@ -12,10 +12,10 @@ const Footer = () => {
         
       </div>
       <div className='flex justify-center items-center w-full gap-7  mt-2 m-2' >
-      <a href="" className='ml-2 hover:text-4xl text-3xl'><ImFacebook /></a>
-      <a href="" className='ml-2 hover:text-4xl text-3xl'><FaSquareXTwitter /></a>
-      <a href="" className='ml-2 hover:text-4xl text-3xl'><GrInstagram /></a>
-      <a href="" className='ml-2 hover:text-4xl text-3xl'><SiBinance /></a>
+      <a href="" className='ml-2 text-[#ff4221] hover:text-4xl text-3xl'><ImFacebook /></a>
+      <a href="" className='ml-2 text-[#ff4221] hover:text-4xl text-3xl'><FaSquareXTwitter /></a>
+      <a href="" className='ml-2 text-[#ff4221] hover:text-4xl text-3xl'><GrInstagram /></a>
+      <a href="" className='ml-2 text-[#ff4221] hover:text-4xl text-3xl'><SiBinance /></a>
       </div>
       <div>
         <p className='text-center text-sm text-gray-300 mt-5 mb-1'>© 2025 1BTCNews.com All rights reserved.</p>

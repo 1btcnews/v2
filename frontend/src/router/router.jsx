@@ -11,6 +11,7 @@ import Managepost from '../pages/admin/dashboard/Managepost.jsx';
 import Users from '../pages/admin/dashboard/Users.jsx';
 import PrivateRouter from './PrivateRouter.jsx';
 import UpdateBlog from '../pages/admin/UpdateBlog.jsx';
+import Contact from '../pages/admin/Contact.jsx';
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path: "/register",
                 element: <Register/>
+            },
+            {
+                path: "/contact-us",
+                element: <Contact/>
             },
             {
                 path: "dashboard",

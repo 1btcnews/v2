@@ -18,7 +18,7 @@ const SearchBlog = ({search, handleSearchChange, handleSearch}) => {
         />
         <button 
         onClick={handleSearch}
-        className='bg-[#1e73BE] px-4 py-2 rounded-md text-white '>Search</button>
+        className='bg-[#ff4221] px-4 py-2 rounded-md text-white '>Search</button>
     </div>
   )
 }

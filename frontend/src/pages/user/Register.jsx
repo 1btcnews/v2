@@ -13,9 +13,10 @@ const Register = () => {
         e.preventDefault();
         try {
             const result = await registerUser({ email, password, username }).unwrap();
-            setMessage('Registration successful!');
+            setMessage('Registration successful! Please login');
+            navigate('/login');
         } catch (error) {
-            setMessage(error.data?.message || 'Registration failed');
+            setMessage(error.data?.message || 'Registration failed Try again ');
         }
     };
 
@@ -50,13 +51,13 @@ const Register = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                {message && <p className='text-blue-900'>{message}</p>}
-                <button type="submit" className='w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded-lg'>
+                {message && <p className='text-[#ff4221]'>{message}</p>}
+                <button type="submit" className='w-full bg-[#ff4221] hover:bg-[#ff684d] text-white font-bold py-2 rounded-lg'>
                     Sign Up
                 </button>
             </form>
             <p className='my-5 text-center text-gray-500'>
-                Already have an account? <Link to='/login' className='text-blue-500 hover:text-blue-700'>Sign In</Link>
+                Already have an account? <Link to='/login' className='text-[#ff4221] hover:text-[#ff725a]'>Sign In</Link>
             </p>
         </div>
     );

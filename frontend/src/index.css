@@ -6,12 +6,16 @@
 /* *{
   color: #fff;
 } */
+ .wid{
+   position: fixed;
+   
+ }
  .navliste{
-  color: white;
+  color: rgb(255, 255, 255);
  }
 .navliste:hover{
 
-   color: rgb(0, 255, 255);
+   color: rgb(255, 30, 0);
 }
 .editorjsdiv  h2{
    font-weight: 700;
