@@ -32,7 +32,7 @@ const Navbar = () => {
     <header className='py-6 bg-gray-800'>
       <nav className='container mx-auto flex justify-between px-5'>
         <a href="/">
-          <img src="/logo.png" alt="logo" className='h-10' />
+          <img src="/logo.png" alt="logo" className='h-11' />
         </a>
         <ul className='sm:flex hidden items-center gap-8'>
           {navlists.map((list, index) => (
