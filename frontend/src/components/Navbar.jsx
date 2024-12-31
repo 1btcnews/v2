@@ -7,13 +7,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout } from '../../src/redux/features/auth/authSlice.js';
 
 const navlists = [
-  { name: 'Bitcoin', link: "https://bcpi.rf.gd" },
-  { name: 'Ethereum', link: "https://bcpi.rf.gd" },
-  { name: 'Alcoin', link: "https://bcpi.rf.gd" },
-  { name: 'Blockchain', link: "https://bcpi.rf.gd" },
-  { name: 'Defi', link: "https://bcpi.rf.gd" },
-  { name: 'NFT', link: "https://bcpi.rf.gd" },
-  { name: 'AI', link: "https://hagc.rf.gd" },
+  { name: 'Bitcoin', link: "https://1btcnews.com/blog/Bitcoin-Exploration" },
+  { name: 'Ethereum', link: "https://1btcnews.com/" },
+  { name: 'Alcoin', link: "https://1btcnews.com/" },
+  
 ];
 
 const Navbar = () => {
