@@ -55,9 +55,7 @@ const Managepost = () => {
                                             <th className="px-5 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                                 Edit
                                             </th>
-                                            <th className="px-5 text-[#ff3030] bg-blueGray-50 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                Delete
-                                            </th>
+                                            
                                         </tr>
                                     </thead>
 
@@ -76,9 +74,7 @@ const Managepost = () => {
                                                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                                     <Link to={`/dashboard/update-items/${blog._id}`} className="text-blue-500 hover:text-blue-700">Edit</Link>
                                                 </td>
-                                                <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                                    <button onClick={() => handleDelete(blog._id)} className="text-red-500 hover:text-red-700">Delete</button>
-                                                </td>
+                                                
                                             </tr>
                                         ))}
                                     </tbody>
