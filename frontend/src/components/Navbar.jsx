@@ -9,7 +9,7 @@ import { logout } from '../../src/redux/features/auth/authSlice.js';
 const navlists = [
   { name: 'Bitcoin', link: "https://1btcnews.com/blog/Bitcoin-Exploration" },
   { name: 'Ethereum', link: "https://1btcnews.com/" },
-  { name: 'Alcoin', link: "https://1btcnews.com/" },
+  { name: 'Alcoin', link: "https://1btcnews.com/blog/The-2024-Report-of-the-People's-Bank-of-China-was-released!-Included-Are-Bitcoin-and-Other-Cryptocurrencies!" },
   { name: 'Contact Us', link: "/contact-us" },
   
 ];
