@@ -27,11 +27,9 @@ const Navbar = () => {
   };
 
   return (
-    <header className='py-3 bg-[#1a1a1a]'>
-     <div 
-      
-     class="binance-widget-marquee wid" data-cmc-ids="1,1027,52,5426,74,1958,11419,24478,5690,13502" data-theme="dark"  data-locale="en"    data-fiat="USD" data-powered-by="Powered by " data-disclaimer=" " ></div>
-      <nav className='container mt-24 mx-auto flex justify-between px-4'>
+    <header className='py-3 bg-gray-800'>
+    <div class="tradingview-widget-container__widget"></div>
+      <nav className='container  mx-auto flex justify-between px-4'>
         <a href="/">
           <img src="/logo.png" alt="logo" className='h-20' />
         </a>
